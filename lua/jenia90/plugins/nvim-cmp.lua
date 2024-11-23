@@ -41,7 +41,8 @@ return {
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(), -- show completion suggestions
         ['<C-e>'] = cmp.mapping.abort(), -- close completion window
-        ['<CR>'] = cmp.mapping.confirm { select = true },
+        ['<tab>'] = cmp.mapping.confirm { select = true },
+        ['<CR>'] = cmp.mapping.confirm { select = false },
       },
       -- sources for autocompletion
       sources = cmp.config.sources {
